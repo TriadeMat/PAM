@@ -1,12 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="15dp"
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tela de Cadastro"
+        android:textSize="32sp"
+        android:textColor="@color/dar_red"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="100dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText android:id="@+id/edt_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borda"
+        android:padding="15dp"
+        android:layout_marginTop="100dp"
+        android:hint="Informe o seu Nome:" />
+
+    <EditText android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borda"
+        android:padding="15dp"
+        android:layout_marginTop="50dp"
+        android:hint="Informe o seu Email:"/>
+
+    <EditText android:id="@+id/edt_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borda"
+        android:padding="15dp"
+        android:layout_marginTop="50dp"
+        android:hint="Informe a Senha:"/>
+
+    <Button android:id="@+id/bnt_cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="100dp"
+        android:text="CADASTRAR"
+        android:backgroundTint="@color/dar_red"
+        app:cornerRadius="12dp"/>
+
+
+</LinearLayout>
