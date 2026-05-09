@@ -46,15 +46,19 @@ public class MainActivity extends AppCompatActivity {
         recuperar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nome,idade,telefone,email;
+                String nome1,idade1,telefone1,email1;
                 SharedPreferences prefs = getSharedPreferences("chavegeral.xml",MODE_PRIVATE);
 
-                nome=prefs.getString("chaveNome","");
-                idade=prefs.getString("chaveIdade","");
-                telefone=prefs.getString("chaveTelefone","");
-                email=prefs.getString("chaveEmail","");
+                nome1=prefs.getString("chaveNome","");
+                idade1=prefs.getString("chaveIdade","");
+                telefone1=prefs.getString("chaveTelefone","");
+                email1=prefs.getString("chaveEmail","");
 
-                mensagem.setText(nome+"\n"+idade+"\n"+telefone+"\n"+email);
+                mensagem.setText(nome1+"\n"+idade1+"\n"+telefone1+"\n"+email1);
+                nome.setText(nome1);
+                telefone.setText(telefone1);
+                idade.setText(idade1);
+                email.setText(email1);
             }
         });
 
