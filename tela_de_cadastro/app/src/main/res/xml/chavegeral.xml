@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="chaveNome">Nome Teste</string>
+    <string name="chaveIdade">29</string>
+    <string name="chaveTelefone">111111111</string>
+</map>

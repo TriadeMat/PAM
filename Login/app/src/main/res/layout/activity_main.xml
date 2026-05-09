@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:textColor="#091E99"/>
+
+    <EditText android:id="@+id/edtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/borda"
+        android:textSize="24sp"
+        android:hint="E-mail :"
+        android:padding="15dp"/>
+    <EditText android:id="@+id/edtsenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:background="@drawable/borda"
+        android:hint="Senha :"
+        android:padding="15dp"/>
+    <Button android:id="@+id/btnlogin"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        app:cornerRadius="5dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#091E99"/>
+</LinearLayout>
